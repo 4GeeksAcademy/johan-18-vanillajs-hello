@@ -2,47 +2,39 @@ import "./style.css";
 
 window.onload = function () {
   const who = [
-    "A lonely merchant",
-    "My neighbor",
-    "A weird clown",
+    "The dog",
+    "My grandma",
     "The mailman",
-    "My dog",
-    "An old pirate",
-    "A confused police officer",
-    "A ninja turtle"
+    "My bird",
+    "My neighbor",
+    "A weird clown"
   ];
 
   const action = [
-    "kicked",
-    "destroyed",
-    "stole",
+    "ate",
+    "peed on",
+    "crushed",
     "broke",
-    "painted",
-    "hid",
-    "pushed",
-    "crushed"
+    "stole",
+    "destroyed"
   ];
 
   const what = [
-    "my car",
     "my homework",
+    "my phone",
+    "the car",
     "my laptop",
     "my backpack",
-    "my phone",
-    "my shoes",
-    "my project",
-    "my bicycle"
+    "my shoes"
   ];
 
   const when = [
-    "near the toilet",
     "before the class",
+    "when I was sleeping",
+    "while I was exercising",
     "during my lunch",
-    "while I was sleeping",
-    "in the parking lot",
-    "inside the kitchen",
-    "next to the elevator",
-    "when I was exercising"
+    "while I was praying",
+    "in the parking lot"
   ];
 
   function getRandomItem(array) {
@@ -56,16 +48,12 @@ window.onload = function () {
     const randomWhat = getRandomItem(what);
     const randomWhen = getRandomItem(when);
 
-    return {
-      firstLine: `${randomWho} ${randomAction} ${randomWhat}`,
-      secondLine: `${randomWhen}`
-    };
+    return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
   }
 
-  const excuse = generateExcuse();
+  const excuseElement = document.querySelector("#excuse");
 
-  document.querySelector("#intro").innerHTML =
-    "OMG! you will not believe me but...";
-  document.querySelector("#excuse-line-1").innerHTML = excuse.firstLine;
-  document.querySelector("#excuse-line-2").innerHTML = excuse.secondLine;
+  if (excuseElement) {
+    excuseElement.innerHTML = generateExcuse();
+  }
 };

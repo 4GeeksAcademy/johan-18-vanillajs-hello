@@ -2,35 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/4geeks-CcQAq-HJ.ico" />
+    <link rel="icon" type="image/svg+xml" href="/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <script type="module" crossorigin src="/assets/index-pgYo3mM8.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BQvSIdFU.css">
+    <title>Excuse Generator</title>
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="/assets/rigo-baby-Dupqafir.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="browser">
+      <div class="browser-top">
+        <div class="traffic-lights">
+          <span class="light red"></span>
+          <span class="light yellow"></span>
+          <span class="light green"></span>
+        </div>
+
+        <div class="tabs">
+          <span class="tab">ta</span>
+          <span class="tab">a:</span>
+          <span class="tab">a:</span>
+          <span class="tab">×</span>
+          <span class="tab">pl</span>
+          <span class="tab">C</span>
+          <span class="tab">b</span>
+          <span class="tab">B</span>
+          <span class="tab">S</span>
+          <span class="tab">H</span>
+          <span class="tab">E</span>
+          <span class="tab">co</span>
+          <span class="tab">aj</span>
+        </div>
+
+        <div class="browser-user">Alejandro US</div>
+      </div>
+
+      <div class="browser-bar">
+        <div class="nav-icons">
+          <span class="nav-arrow">←</span>
+          <span class="nav-arrow">→</span>
+          <span class="refresh">↻</span>
+        </div>
+
+        <div class="address-bar">
+          <span class="lock">🔒</span>
+          <span class="secure">Secure</span>
+          <span class="url">https://assignments-alesanche...</span>
+          <span class="star">☆</span>
+        </div>
+
+        <div class="top-icons">
+          <span class="mini-icon">◔</span>
+          <span class="mini-icon">S</span>
+          <span class="mini-icon">◈</span>
+          <span class="mini-icon red-box">CSS</span>
+          <span class="mini-icon green-box">⬆</span>
+        </div>
+      </div>
+
+      <div class="bookmarks-bar">
+        <span class="bookmark">📁 Clientes</span>
+        <span class="bookmark">Gmail</span>
+        <span class="bookmark">CRM</span>
+        <span class="bookmark">Website</span>
+        <span class="bookmark">BreatheCode</span>
+        <span class="bookmark">Academy Slack</span>
       </div>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+    <main class="page">
+      <section class="excuse-wrapper">
+        <p id="intro">OMG! you will not believe me but...</p>
+        <p id="excuse">My dog ate my homework</p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
   </body>
 </html>
